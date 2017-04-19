@@ -1,6 +1,6 @@
 # traccar server
 
-Start https://www.traccar.org server on port http://hostname:8082
+Start https://www.traccar.org server with a MySQL backend on port http://hostname:8082 and devices can connect on port 5000-5150. A list of https://www.traccar.org/devices and supported https://www.traccar.org/protocols
 
 ## Start MySQL 
 
