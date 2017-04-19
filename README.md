@@ -1,5 +1,6 @@
-# docker-traccar
-traccar
+# traccar server
+
+Start traccar server on port http://hostname:8082
 
 ## Start MySQL 
 
