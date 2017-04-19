@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE properties SYSTEM 'http://java.sun.com/dtd/properties.dtd'>
+<properties>
+
+    <entry key="config.default">./conf/default.xml</entry>
+    <entry key='database.driver'>com.mysql.jdbc.Driver</entry> 
+    <entry key='database.url'>jdbc:mysql://mysql:3306/traccar?allowMultiQueries=true&amp;autoReconnect=true&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;sessionVariables=sql_mode=''</entry>
+    <entry key='database.user'>traccar</entry> 
+    <entry key='database.password'>traccar</entry>
+
+</properties>

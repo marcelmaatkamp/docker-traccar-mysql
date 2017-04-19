@@ -1,0 +1,25 @@
+version: '2'
+services: 
+
+ mysql:
+  image: mysql
+  restart: always
+  hostname: mysql
+  environment:
+   - MYSQL_ROOT_PASSWORD=my-secret-pw
+  volumes:
+   - mysql:/var/lib/mysql/
+   - ./conf/mysql.sql:/docker-entrypoint-initdb.d/mysql.sql
+
+ traccar:
+  image: marcelmaatkamp/traccar-server
+  ports:
+   - "5000-5150:5000-5150"
+   - "8082:8082"
+  volumes:
+   - traccar-db:/opt/traccar/data/database
+   - ./conf/traccar.xml:/opt/traccar/traccar.xml
+
+volumes:
+ traccar-db:
+ mysql:
