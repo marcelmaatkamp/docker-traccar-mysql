@@ -1,3 +1,2 @@
-CREATE DATABASE IF NOT EXISTS `traccar`;
-CREATE USER 'traccar'@'traccar' IDENTIFIED BY 'traccar';
-GRANT ALL PRIVILEGES ON * . * TO 'traccar'@'traccar';
+CREATE DATABASE IF NOT EXISTS traccar;
+GRANT ALL PRIVILEGES ON traccar.* To 'traccar'@'%' IDENTIFIED BY 'traccar';

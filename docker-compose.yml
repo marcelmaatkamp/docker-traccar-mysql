@@ -13,12 +13,14 @@ services:
 
  traccar:
   image: marcelmaatkamp/traccar-server
+  hostname: traccar
+  restart: always
   ports:
    - "5000-5150:5000-5150"
    - "8082:8082"
   volumes:
    - traccar-db:/opt/traccar/data/database
-   - ./conf/traccar.xml:/opt/traccar/traccar.xml
+   - ./conf/traccar.xml:/opt/traccar/conf/traccar.xml
 
 volumes:
  traccar-db:
