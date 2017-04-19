@@ -1,6 +1,6 @@
 # traccar server
 
-Start traccar server on port http://hostname:8082
+Start https://www.traccar.org server on port http://hostname:8082
 
 ## Start MySQL 
 
